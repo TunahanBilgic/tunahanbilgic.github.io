@@ -81,4 +81,4 @@ Bütün **MATLAB kodlarına** Github sayfam aracılığı ile erişebilirsiniz. 
 
 Github: [Github MATLAB](https://github.com/TunahanBilgic/kodlamaogreniyorum/tree/main/matlab)
 
-Sitemize destek olmak isteyen sponsorlar için link: [Patreon](http://patreon.com/tunahanbilgic)
+Sitemize destek olmak isteyen sponsorlar için link: [Patreon](https://patreon.com/tunahanbilgic)
