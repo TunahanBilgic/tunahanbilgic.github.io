@@ -170,6 +170,9 @@ collections:
   tabs:
     output: true
     sort_by: order
+  categories:
+    output: true
+    permalink: /:name/
 
 defaults:
   - scope:
@@ -222,4 +225,4 @@ jekyll-archives:
     tag: tag
   permalinks:
     tag: /tags/:name/
-    category: /:title/
+    category: /:name/
