@@ -1,0 +1,135 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://tunahanbilgic.github.io/</id>
+  <title>Kodlama Öğreniyorum</title>
+  <subtitle>Türkçe, Yazılım Öğrenme Sitesi</subtitle>
+  <updated>2024-11-19T01:49:01+03:00</updated>
+  <author>
+    <name>Tunahan Bilgiç</name>
+    <uri>https://tunahanbilgic.github.io/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://tunahanbilgic.github.io/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="tr-TR"
+    href="https://tunahanbilgic.github.io/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
+  <rights> © 2024 Tunahan Bilgiç </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>MATLAB Klavyeden Veri Alma</title>
+    <link href="https://tunahanbilgic.github.io/matlab-klavyeden-veri-alma/" rel="alternate" type="text/html" title="MATLAB Klavyeden Veri Alma" />
+    <published>2019-12-21T17:24:00+03:00</published>
+  
+    <updated>2024-11-19T00:40:37+03:00</updated>
+  
+    <id>https://tunahanbilgic.github.io/matlab-klavyeden-veri-alma/</id>
+    <content src="https://tunahanbilgic.github.io/matlab-klavyeden-veri-alma/" />
+    <author>
+      <name>Tunahan Bilgiç</name>
+    </author>
+
+  
+    
+    <category term="matlab-temel-bilgiler" />
+    
+  
+
+  <summary>Bir bilgisayar programında kullanılacak verileri hep kendimiz belirlemeyiz. Bu verileri, kullanıcının anlık olarak  girmesini veya bir veri tabanından aktarmayı isteyebiliriz. Bu yazımızda kullanıcıdan klavye aracılığıyla veri almaya değineceğiz.
+
+Bundan önceki yazılarımızda,  yazdığımız programlarda kullanılacak verileri değişkenlere atamıştık. Klavyeden veri alırken de aynı mantıkla veriyi bi...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>MATLAB Komut Dosyaları(Script Files)</title>
+    <link href="https://tunahanbilgic.github.io/matlab-script-files/" rel="alternate" type="text/html" title="MATLAB Komut Dosyaları(Script Files)" />
+    <published>2019-12-20T02:47:00+03:00</published>
+  
+    <updated>2024-11-19T00:40:37+03:00</updated>
+  
+    <id>https://tunahanbilgic.github.io/matlab-script-files/</id>
+    <content src="https://tunahanbilgic.github.io/matlab-script-files/" />
+    <author>
+      <name>Tunahan Bilgiç</name>
+    </author>
+
+  
+    
+    <category term="matlab-temel-bilgiler" />
+    
+  
+
+  <summary>MATLAB’da programlama, araç kutularını(toolboxes) saymazsak iki başlıkta özetlenebilir:
+
+
+  Komut Penceresi ile Programlama
+  Komut Dosyaları ile Programlama
+    
+      Düz Komut Dosyaları (Script Files)
+      Fonksiyon Komut Dosyaları (Function Files)
+Bundan önceki yazılarımızda komut penceresi ile programlama yapmıştık. Ancak bildiğiniz üzere komut penceresi ile yazdığımız programlar, tanımla...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>MATLAB’da Değişken Tanımlama</title>
+    <link href="https://tunahanbilgic.github.io/matlabda-degisken-tanimlama/" rel="alternate" type="text/html" title="MATLAB’da Değişken Tanımlama" />
+    <published>2019-12-15T11:31:00+03:00</published>
+  
+    <updated>2024-11-19T00:40:37+03:00</updated>
+  
+    <id>https://tunahanbilgic.github.io/matlabda-degisken-tanimlama/</id>
+    <content src="https://tunahanbilgic.github.io/matlabda-degisken-tanimlama/" />
+    <author>
+      <name>Tunahan Bilgiç</name>
+    </author>
+
+  
+    
+    <category term="matlab-temel-bilgiler" />
+    
+  
+
+  <summary>Bir program oluştururken bazı bilgileri saklamak, üzerlerinde işlem yapmak ve bu bilgileri güncellemek ihtiyacı duyarız. Bunun için, değişken(variable) kullanmamız gerekir. Kısacası değişkenler, bizim isimlendirdiğimiz ve bilgisayarda geçici süreyle saklı kalan tanımlamalardır. Bir değişken tanımlama:
+
+%DEĞİŞKEN İSMİ = ATANAN DEĞER
+
+şeklinde yapılır. Örnek olarak, “yil” isimli bir değişken tanı...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Matlab ile Programlamaya Giriş</title>
+    <link href="https://tunahanbilgic.github.io/matlab-ile-programlamaya-giris/" rel="alternate" type="text/html" title="Matlab ile Programlamaya Giriş" />
+    <published>2019-12-14T07:50:00+03:00</published>
+  
+    <updated>2024-11-19T00:40:37+03:00</updated>
+  
+    <id>https://tunahanbilgic.github.io/matlab-ile-programlamaya-giris/</id>
+    <content src="https://tunahanbilgic.github.io/matlab-ile-programlamaya-giris/" />
+    <author>
+      <name>Tunahan Bilgiç</name>
+    </author>
+
+  
+    
+    <category term="matlab-temel-bilgiler" />
+    
+  
+
+  <summary>Bu yazımızda MATLAB ile programlamaya giriş yapacağız. Ancak bu yazının amacı programlama mantığını anlatmak olmayacak. Ama ilerleyen zamanlarda programlama mantığı ve program oluşturulurken kullanılan akış diyagramları ile ilgili yazımız olacak.
+
+Öncelikle MATLAB ile etkileşim kurduğumuz bileşen olan komut penceresinden (command window) bahsedeceğiz. Komut penceresinin işlevlerine; sayısal hes...</summary>
+
+  </entry>
+
+</feed>
+
+
