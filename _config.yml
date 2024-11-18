@@ -173,9 +173,7 @@ collections:
   categories:
     output: true
     permalink: /:name/
-  posts:
-    output: true
-    permalink: /:title/
+
 
 
 defaults:
@@ -229,4 +227,4 @@ jekyll-archives:
     tag: tag
   permalinks:
     tag: /tags/:name/
-    category: /:name/
+    category: /:name/ 
