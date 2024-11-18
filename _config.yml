@@ -173,6 +173,10 @@ collections:
   categories:
     output: true
     permalink: /:name/
+  posts:
+    output: true
+    permalink: /:title/
+
 
 defaults:
   - scope:
