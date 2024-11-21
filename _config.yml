@@ -173,7 +173,7 @@ collections:
     sort_by: order
   categories:
     output: true
-    permalink: cat/:name/
+    permalink: /:name/
 
 
 
