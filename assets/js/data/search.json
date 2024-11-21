@@ -1,0 +1,72 @@
+[
+  
+  {
+    "title": "MATLAB Klavyeden Veri Alma",
+    "url": "/matlab-klavyeden-veri-alma/",
+    "categories": "matlab-temel-bilgiler",
+    "tags": "input, klavyeden veri, matlab",
+    "date": "2019-12-21 17:24:00 +0300",
+    
+
+
+
+
+
+    
+    "snippet": "Bir bilgisayar programında kullanılacak verileri hep kendimiz belirlemeyiz. Bu verileri, kullanıcının anlık olarak  girmesini veya bir veri tabanından aktarmayı isteyebiliriz. Bu yazımızda kullanıc...",
+    "content": "Bir bilgisayar programında kullanılacak verileri hep kendimiz belirlemeyiz. Bu verileri, kullanıcının anlık olarak  girmesini veya bir veri tabanından aktarmayı isteyebiliriz. Bu yazımızda kullanıcıdan klavye aracılığıyla veri almaya değineceğiz.Bundan önceki yazılarımızda,  yazdığımız programlarda kullanılacak verileri değişkenlere atamıştık. Klavyeden veri alırken de aynı mantıkla veriyi bir değişkene atayacağız. Klavyeden veri almak için “input()” komutu kullanılır. “input()” komutu ile hem sayısal hem de sözel(karakter, dizi) veri alınabilir. Ancak “input()” komutunun varsayılan ayarı, kullanıcının sayısal değer gireceği şeklindedir. Kullanıcıdan sözel veri almak istiyorsak, ‘s‘ ifadesi ile programa belirtmemiz gerekir. “input()” komutunun kullanımları şu şekildedir:%DEĞİŞKEN İSMİ = input('Kullanıcıya gösterilecek yazı');yas = input('Yaşınızı girin: ');          %Sayısal Veri Almaisim = input('isminizi girin: ','s');     %Sözel Veri Alma  MATLAB’da komut yazarken otomatik tamamlama özelliği bulunmaktadır. “TAB” tuşu ile bu özelliği kullanırız. Örnek olarak; “fprinf()” komutu yazmak istiyorsak, “fpr” yazıp “TAB” tuşuna basarsak MATLAB otomatik olarak komutu tamamlayacaktır.Örnek uygulama olarak kullanıcının yaşını hesaplatan bir program yazalım. Kullanıcıdan isim ve doğum yılı bilgisini alalım ve yaşını hesaplatalım. Bir adet “fprintf()” komutu kullanarak, bu bilgilerin her birini ayrı satırlara yazdıralım.  isim = input('İsminizi Girin: ','s');dogum_yili = input('Doğum Yılınızı Girin: ');mevcut_yil = 2019; %Yaş hesaplatmak için bulunduğumuz yılı tanımlıyoruz.fprintf('İsminiz: %s\\nDoğum Yılınız: %d\\nSayın %s %d yaşındasınız.\\n',isim,dogum_yili,isim,mevcut_yil-dogum_yili);                                           Bir önceki yazımızda (MATLAB Komut Dosyaları), “…” ifadesinin kodu alt satırdan devam ettirmeye yaradığından bahsetmiştik.Bütün MATLAB kodlarına Github sayfam aracılığı ile erişebilirsiniz. Github sayfamın linkine aşağıdan ulaşabilirsiniz. Görüşmek üzere!Github: Github MATLABSitemize destek olmak isteyen sponsorlar için link: Patreon"
+  },
+  
+  {
+    "title": "MATLAB Komut Dosyaları(Script Files)",
+    "url": "/matlab-script-files/",
+    "categories": "matlab-temel-bilgiler",
+    "tags": "komut dosyası, m dosyası, matlab script",
+    "date": "2019-12-20 02:47:00 +0300",
+    
+
+
+
+
+
+    
+    "snippet": "MATLAB’da programlama, araç kutularını(toolboxes) saymazsak iki başlıkta özetlenebilir:  Komut Penceresi ile Programlama  Komut Dosyaları ile Programlama          Düz Komut Dosyaları (Script Files)...",
+    "content": "MATLAB’da programlama, araç kutularını(toolboxes) saymazsak iki başlıkta özetlenebilir:  Komut Penceresi ile Programlama  Komut Dosyaları ile Programlama          Düz Komut Dosyaları (Script Files)      Fonksiyon Komut Dosyaları (Function Files)Bundan önceki yazılarımızda komut penceresi ile programlama yapmıştık. Ancak bildiğiniz üzere komut penceresi ile yazdığımız programlar, tanımladığımız değişkenler ve aldığımız çıktılar geçici olarak saklanmaktadır. Oluşturduğumuz programların kaybolmaması için komut dosyalarını kullanırız. Komut dosyalarını kendi içinde; düz ve fonksiyon komut dosyaları şeklinde ikiye ayırmamız mümkündür.  Fonksiyon komut dosyaları ile düz komut dosyaları arasında bir takım farklar bulunmaktadır. Biz bu yazımızda düz komut dosyalarına değineceğiz ancak fonksiyon komut dosyaları ile ilerleyen zamanlarda bir yazımız olacak.      İşe öncelikle bir adet komut dosyası oluşturmakla başlayalım. Benim kullandığım arayüzün dili İngilizce ve sizde de öyle olduğunu varsayarak anlatımda İngilizce kelimelere yer vereceğim. Yeni komut dosyası oluşturmak için “Home” sekmesinin altındaki “New Script” butonuna tıklıyoruz. (Kısayol tuşu: “Ctrl + N”)MATLAB Metin Editörü karşımıza boş ve isimlendirilmemiş bir komut dosyası getiriyor. Artık kodumuzu yazıp, kaydetmeye hazırız. İlk programımız olarak; “a” ve “b” ismindeki iki tane değişkene kendimizin belirlediği sayıları atayan, bu değerlerin birbirleriyle dört işlemini yaptıran ve “fprintf()” komutuyla ekrana yazdıran bir program oluşturalım. Programımızı iki farklı şekilde yazabiliriz.a = 35;b = 6;fprintf('%d ile %d sayılarının toplamı: %d, farkı: %d, çarpımı: %d ve bölümü: %g ''dir.\\n',a,b,a+b,a-b,a*b,a/b);a = 35;b = 6;top = a + b;cikarma = a - b;carpma = a * b;bolme = a / b;fprintf('%d ile %d sayılarının toplamı: %d, farkı: %d, çarpımı: %d ve bölümü: %g''dir.\\n,top,cikarma,carpma,bolme);     Yazı yazdırırken; ” ‘ “, ” % “ gibi operatörler MATLAB tarafından özel olarak algılanır. Eğer bunları ekrana yazdırmak istersek, arka arkaya iki defa kullanmamız gerekir.Programımızı yazdıktan sonra çalıştırmadan önce kaydetmemiz gerekir. Bu işlemi, “Editor” sekmesinin altındaki “Save” butonu ile veya “Ctrl + S” kısayolu ile yapabiliriz. Kaydetme sırasında açılan pencerede, programı kaydetmek istediğimiz yeri seçmemiz ve programa bir isim belirlememiz gerekir. Programın ismini “ilkprogram” olarak belirleyip, kaydetme işlemini yapalım. MATLAB, açılışta kendisine bir çalışma klasörü belirler. Bunu kendimiz de ayarlayabiliriz. Eğer az önce kayıt yeri olarak seçtiğimiz klasör ile MATLAB’ ın çalışma klasörü farklı ise ekrana şu şekilde bir uyarı çıkacaktır: Bu aşamada “Change Folder” seçeneğini seçip, mevcut çalışma klasörünü değiştirelim. Programı çalıştırmak için, “Editor” sekmesinin altındaki “Run” butonuna basmamız veya komut penceresine programın ismini girmemiz gerekir. (Kısayol tuşu: “F5”)  Komut dosyalarının uzantısı “.m” şeklindedir.  Yazdığınız kod uzun ise ve kodun tamamını görmek için yana kaydırma işlemi yapıyorsanız; kodu “…” ile bölüp, devamını alt satıra yazabilirsiniz.  Daha önceden çalıştırılan programlardan kalan verileri temizlemek için “clc” ve “clear all” komutlarını kullanmayı unutmayalım.Bir sonraki yazımız “klavyeden veri alma” hakkında olacak.Bütün MATLAB kodlarına Github sayfam aracılığı ile erişebilirsiniz. Github sayfamın linkine aşağıdan ulaşabilirsiniz. Görüşmek üzere!Github: Github MATLABSitemize destek olmak isteyen sponsorlar için link: Patreon"
+  },
+  
+  {
+    "title": "MATLAB’da Değişken Tanımlama",
+    "url": "/matlabda-degisken-tanimlama/",
+    "categories": "matlab-temel-bilgiler",
+    "tags": "değişken tanımlama, fprintf, disp, swap, matlab, variable",
+    "date": "2019-12-15 11:31:00 +0300",
+    
+
+
+
+
+
+    
+    "snippet": "Bir program oluştururken bazı bilgileri saklamak, üzerlerinde işlem yapmak ve bu bilgileri güncellemek ihtiyacı duyarız. Bunun için, değişken(variable) kullanmamız gerekir. Kısacası değişkenler, bi...",
+    "content": "Bir program oluştururken bazı bilgileri saklamak, üzerlerinde işlem yapmak ve bu bilgileri güncellemek ihtiyacı duyarız. Bunun için, değişken(variable) kullanmamız gerekir. Kısacası değişkenler, bizim isimlendirdiğimiz ve bilgisayarda geçici süreyle saklı kalan tanımlamalardır. Bir değişken tanımlama:%DEĞİŞKEN İSMİ = ATANAN DEĞERşeklinde yapılır. Örnek olarak, “yil” isimli bir değişken tanımlayalım ve ona “2019” değerini atayalım. Sonrasında, “disp()” komutu ile ekrana yazdıralım.yil = 2019;disp(yil);  Değişken isimleri; boşluk, önce sayı sonra harf(6x), özel ifade olmayacak ve Türkçe karakter içermeyecek şekilde belirlenmelidir. Aşağıdaki atamaları yapmayı denerseniz bir hata uyarısı ile karşılaşacaksınız.  6x = 15; %önce sayı olmamalıend = 21; %özel ifade olmamalıyıl = 2019; %Türkçe karakter olmamalıbu yil = 2019; %Boşluk olmamalı  Değişkenler Aracılığı ile Ekrana Bilgi Yazdıralım!Sözel bir ifadeyi değişkene atamak istiyorsak tek tırnak(‘ ‘) içinde yazmamız gerekir. Örnek olarak; “ulke” isimli bir değişken oluşturup, “Türkiye” ifadesini atayalım. Sonrasında, “disp()” komutu ile ekrana yazdıralım. “disp()” komutunun içine çift tırnak kullanmadan değişkenin ismini yazarsak, yazdığımız değişkenin değerini ekrana yazdırır.ulke = 'Türkiye';disp(ulke);Birinci yazımızda “disp()” ve “fprintf()” komutlarından bahsetmiştik. Eğer ekrana bir sözel ifade ile bir sayısal değer yazdırılmak istenirse bu iki komut arasında farklılıklar bulunmaktadır. Bunu bir örnek ile açıklayalım. Ekrana, “Bugün günlerden pazar. Hava 15 derece ve saat 10.35 .” yazısını yazdıralım. “pazar”, “15” ve “10.35” bilgileri; “gun”, “hava” ve “saat” isimli değişkenlerden gelsin.gun = 'pazar';hava = 15;saat = 10.35;disp(['Bugün günlerden ' gun '. Hava ' num2str(hava) ' derece ve saat ' num2str(saat) '.']);fprintf('Bugün günlerden %s. Hava %d derece ve saat %g.\\n',gun,hava,saat);Görüldüğü üzere “disp()” komutunda, değişkenlerden gelen bir sayısal değer ile sözel bir ifadeyi birlikte yazdırırken “num2str()” komutunu kullanmamız gerekiyor. “num2str()” komutu, sayısal bir değeri karakter dizisine çevirmeye yarar. Böyle durumlarda “disp()” komutu, “fprintf()” komutuna göre daha uzun yazım gerektirmektedir.“fprintf()” komutunu inceleyecek olursak, “%” ile başlayan ifadeler dikkat çekmektedir. Tıpkı kaçış operatörü(“\\“) gibi, “%” operatörü de “fprintf()” komutu için özel anlam taşımaktadır. “%” ifadesinin yanında yer alan karaktere göre “fprintf()” ekrana bilgi yazdırmaktadır. Bu bilgiler değişkenlerden gelmektedir. Bilgi sağlayan değişkenler ise çift tırnağın dışında, sırasıyla ve birbirlerinden virgülle ayrılarak yazılır.%c : Değişkeni tek bir karakter olarak yazdırma.%s : Değişkeni karakter dizisi olarak yazdırma.%d : Değişkeni tam sayı olarak yazdırma.%f : Değişkeni ondalıklı sayı olarak yazdırma.%g : Değişkeni en uygun formda yazdırma. (Tam sayı, ondalıklı sayı)  Eğer sizde sayılarda daha fazla veya daha az sıfır varsa “format” ayarlarını gözden geçirin.  İki değişkenin değerlerini, birbirleriyle değiştirmek istiyorsanız “deal()” komutunu kullanabilirsiniz. Örnek kullanım: [a,b] = deal(b,a)Tanımladığımız bir değişkeni silmek istiyorsak “clear” komutunu kullanırız.clc        %Komut penceresini temizler.clf        %Mevcut şekil(figure) ekranını temizler. İlerleyen konularda göreceğiz.clear x    %X değişkenini siler.clear all  %Bütün değişkenleri siler.who        %Mevcut değişkenleri gösterir.what       %MATLAB'ın çalıştığı klasördeki MATLAB dosyalarını gösterir.dir        %MATLAB'ın çalıştığı klasördeki bütün dosyaları gösterir.Bir sonraki yazımız “MATLAB Komut Dosyaları” hakkında olacak.Bütün MATLAB kodlarına Github sayfam aracılığı ile erişebilirsiniz. Github sayfamın linkine aşağıdan ulaşabilirsiniz. Görüşmek üzere!Github: Github MATLABSitemize destek olmak isteyen sponsorlar için link: Patreon"
+  },
+  
+  {
+    "title": "Matlab ile Programlamaya Giriş",
+    "url": "/matlab-ile-programlamaya-giris/",
+    "categories": "matlab-temel-bilgiler",
+    "tags": "disp, fprintf, komut penceresi, matlab, yazi yazdirma",
+    "date": "2019-12-14 07:50:00 +0300",
+    
+
+
+
+
+
+    
+    "snippet": "Bu yazımızda MATLAB ile programlamaya giriş yapacağız. Ancak bu yazının amacı programlama mantığını anlatmak olmayacak. Ama ilerleyen zamanlarda programlama mantığı ve program oluşturulurken kullan...",
+    "content": "Bu yazımızda MATLAB ile programlamaya giriş yapacağız. Ancak bu yazının amacı programlama mantığını anlatmak olmayacak. Ama ilerleyen zamanlarda programlama mantığı ve program oluşturulurken kullanılan akış diyagramları ile ilgili yazımız olacak.Öncelikle MATLAB ile etkileşim kurduğumuz bileşen olan komut penceresinden (command window) bahsedeceğiz. Komut penceresinin işlevlerine; sayısal hesaplamalar yapabilme, program yazıp çalıştırabilme, daha önceden kaydedilmiş olan fonksiyonları kullanarak çıktı alabilme gibi örnekler verilebilir.  Not: Bir değişken tanımlamadan yapılan işlemler MATLAB tarafından otomatik olarak “ans” isimli değişkene kaydedilir. Değişken tanımlamayı önümüzdeki yazımızda yapacağız.Bazen yazdığımız kodların yanına not düşmek isteriz. Bunun için “%” operatörü kullanılır.5+5 %toplama işlemi1520-9 %çıkarma işlemi1993/3 %bölme işlemi3*3 %çarpma işlemi8^2 %üs alma  Not: Komut pencereniz çok dolduysa eğer “clc” komutu ile temizleyebilirsiniz.Ekrana Bilgi Yazdıralım!Ekrana yazı yazdırmak için genellikle “fprintf()” ve “disp()” komutları kullanılır.  Kullanılan bir diğer komut olan “sprintf()” komutundan ilerleyen zamanlarda bahsedeceğiz.Bu komutlar:disp('Yazdırılacak Yazı');fprintf('Yazdırılacak Yazı');şeklinde kullanılır.  MATLAB’da her satır sonuna “;” konulur. Bunu unutmamaya özen gösterelim. Komut penceresinde kullanmadığımız takdirde satırda yazan ifadenin değeri ekrana gelir. Değişken tanımlama yazımızı inceledikten sonra, komut penceresinde “x = 5” ile “x = 5;” arasındaki farkı inceleyebilirsiniz.Komut penceresine aşağıdaki kodları girelim ve çıktılarımızı inceleyelim.disp('Hello, World!');fprintf('Hello, World!');Dikkat ettiyseniz eğer “disp()” komutu ile kullanımda imleç bir sonraki satıra geçmişken, “fprintf()” komutu ile kullanımda imleç aynı satırda kalmıştır. Çünkü “fprintf()” komutu, imleci soldan sağa birim birim kaydırmakta ve iki tırnak(‘ ‘) içerisinde bulunan her şeyi karakter karakter ekrana basmaktadır. Yazdırılan yazıların konumlarını ayarlamak veya imleci bir sonraki satıra geçirmek istenirse eğer kaçış operatörleri kullanılması gerekir.\\t : %İmleci bir TAB sağa kaydırır.\\n : %İmleci bir sonraki satırın başına götürür.Bir sonraki yazımız “değişken tanımlama ve ekrana yazdırma” hakkında olacak.Bütün MATLAB kodlarına Github sayfam aracılığı ile erişebilirsiniz. Github sayfamın linkine aşağıdan ulaşabilirsiniz. Görüşmek üzere!Github: Github MATLABSitemize destek olmak isteyen sponsorlar için link: Patreon"
+  }
+  
+]
+
