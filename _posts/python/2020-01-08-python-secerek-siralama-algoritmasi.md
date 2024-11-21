@@ -84,4 +84,4 @@ Github: [Github Python](https://github.com/TunahanBilgic/kodlamaogreniyorum/tree
 
 Sitemize destek olmak isteyen sponsorlar için link: [Patreon](https://patreon.com/tunahanbilgic)
 
-Kaynak: [Carnegie Mellon University, School of Computer Science](http://www.cs.cmu.edu/~adamchik/15-121/lectures/Sorting%20Algorithms/sorting.html)
+Kaynak: [Carnegie Mellon University, School of Computer Science](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Sorting%20Algorithms/sorting.html)

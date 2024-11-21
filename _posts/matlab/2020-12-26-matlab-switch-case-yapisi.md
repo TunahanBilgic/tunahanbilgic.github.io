@@ -106,7 +106,7 @@ switch ay{1}
 end
 ```
 
-![](/assets/img/matlab/matlab35.png)
+![](/assets/img/matlab/matlab35.PNG)
 
 “switch – case – otherwise” mantığının iyice kavranması için akış diyagramları:
 

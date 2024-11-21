@@ -79,4 +79,4 @@ Github: [Github MATLAB](https://github.com/TunahanBilgic/kodlamaogreniyorum/tree
 
 Sitemize destek olmak isteyen sponsorlar için link: [Patreon](https://patreon.com/tunahanbilgic)
 
-Kaynak: [Carnegie Mellon University, School of Computer Science](http://www.cs.cmu.edu/~adamchik/15-121/lectures/Sorting%20Algorithms/sorting.html), [Vikipedi](https://tr.wikipedia.org/wiki/Kabarc%C4%B1k_s%C4%B1ralamas%C4%B1)
+Kaynak: [Carnegie Mellon University, School of Computer Science](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Sorting%20Algorithms/sorting.html), [Vikipedi](https://tr.wikipedia.org/wiki/Kabarc%C4%B1k_s%C4%B1ralamas%C4%B1)
